@@ -1,0 +1,69 @@
+/* --- LAYOUT --- */
+
+:root {
+  --desert-storm: #eeebe8;
+  --light-gray-orange: #e8e3dc;
+  --light-gray-red: #e8d8d3;
+  --light-cyan-gray: #c1d2db;
+  --unfussy-beige: #d6cabf;
+  --vivid-red: #ec1d24;
+  --night-gray: #2b2b2b;
+}
+
+@font-face {
+  font-family: AdobeGaramondProItalic;
+  src: url(assets/fonts/adobe-garamond-pro-regular.woff2);
+
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: AdobeGaramondPro;
+  src: url(assets/fonts/adobe-garamond-pro-regular.woff2) format('woff2');
+
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: FuturaPTBook;
+  src: url(assets/fonts/futura-pt-book.woff2) format('woff2'),
+    url(assets/fonts/futura-pt-book.woff2) format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: FuturaPTMedium;
+  src: url(assets/fonts/futura-pt-medium.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  background-color: var(--desert-storm);
+  color: var(--night-gray);
+  font-family: AdobeGaramondPro, 'Times New Roman', serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+body,
+html {
+  margin: 0;
+}
+em,
+i {
+  font-family: AdobeGaramondProItalic, 'Times New Roman', Times, serif;
+  font-style: normal;
+}
+html {
+  height: 100%;
+  touch-action: manipulation;
+}
+main {
+  flex: 1 0 auto;
+  overflow: hidden;
+  position: relative;
+}

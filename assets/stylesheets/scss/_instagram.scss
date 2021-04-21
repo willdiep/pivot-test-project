@@ -1,0 +1,83 @@
+
+.instagram {
+  border-top: 1px solid var(--night-gray);
+  padding-top: 60px;
+}
+@media (min-width: 1024px) {
+  .instagram {
+    padding-top: 90px;
+  }
+}
+@media (min-width: 1280px) {
+  .instagram {
+    padding-top: 120px;
+  }
+}
+.instagram__carousel {
+  display: flex;
+  background: var(--night-gray);
+  border-top: 1px solid var(--night-gray);
+  margin: 0 -1px;
+}
+.instagram__footer {
+  border-top: 1px solid var(--night-gray);
+  padding: 60px 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .instagram__footer {
+    display: none;
+  }
+}
+.instagram__username {
+  color: var(--night-gray);
+  font-size: 30px;
+}
+.instagram__header {
+  margin-bottom: 30px;
+}
+.instagram__header .instagram__container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.instagram__shopLink {
+  align-items: center;
+  color: var(--night-gray);
+  display: inline-flex;
+  font-family: AdobeGaramondProItalic, 'Times New Roman', Times, serif;
+  font-size: 29px;
+  text-decoration: underline;
+}
+@media (min-width: 1024px) {
+  .instagram__shopLink {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .instagram__shopLink--mobileOnly {
+    display: none;
+  }
+}
+.instagram__shopLink svg {
+  margin-left: 10px;
+}
+.instagram__shopLink svg > g {
+  fill: var(--night-gray);
+}
+.instagram__subtitle {
+  display: block;
+  font-family: FuturaPTMedium, Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.instagram__container {
+  padding: 0 35px;
+}
+@media (min-width: 1024px) {
+  .instagram__container {
+    padding: 0 60px;
+  }
+}

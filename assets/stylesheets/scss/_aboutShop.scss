@@ -1,0 +1,230 @@
+.aboutShop {
+  position: relative;
+}
+
+.aboutShop__subtitle {
+  display: block;
+  font-family: FuturaPTMedium, Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.aboutShop__info {
+  padding: 75px 20px;
+  position: relative;
+  text-align: center;
+
+  @media (min-width: 375px) {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
+  @media (min-width: 414px) {
+    padding-bottom: 125px;
+    padding-top: 125px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 25px 10%;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 25px 12%;
+  }
+
+  @media (min-width: 1280px) {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-bottom: 35px;
+    padding-top: 35px;
+  }
+
+  @media (min-width: 1600px) {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+}
+
+.aboutShop__item {
+  position: relative;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    &::after {
+      border-left: 1px solid var(--night-gray);
+      content: '';
+      display: none;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &--1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray-orange);
+
+    .aboutShop__item--1 {
+      border-top: 1px solid var(--night-gray);
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &--2 {
+      border-top: 1px solid var(--night-gray);
+    }
+  }
+}
+
+.aboutShop__label {
+  align-items: center;
+  border-bottom: 1px solid var(--night-gray);
+  border-top: 1px solid transparent;
+  color: var(--night-gray);
+  display: inline-flex;
+  font-family: AdobeGaramondProItalic, 'Times New Roman', serif;
+  font-size: 29px;
+  padding: 2px 0;
+  margin-top: 10px;
+
+  @media (min-width: 1024px) {
+    font-size: 30px;
+  }
+}
+.aboutShop__link {
+  color: var(--night-gray);
+  display: block;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
+}
+
+.aboutShop__list {
+  @media (min-width: 768px) {
+    border-top: 1px solid var(--night-gray);
+    display: flex;
+  }
+
+  .aboutShop__list--right {
+    flex-flow: row nowrap;
+  }
+  .aboutShop__list--right .aboutShop__item--2:after {
+    display: block;
+  }
+}
+.aboutShop__picture,
+.aboutShop__picture * {
+  display: block;
+  backface-visibility: hidden;
+  transform: translateZ(0) scale(1, 1);
+}
+@media (max-width: 767px) {
+  .aboutShop__picture,
+  .aboutShop__picture * {
+    height: auto;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .aboutShop__picture,
+  .aboutShop__picture * {
+    height: 100%;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center center;
+    object-position: center center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .aboutShop__picture-holder {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .aboutShop__picture-wrap {
+    padding-top: 87.5%;
+  }
+}
+.aboutShop__title {
+  font-family: FuturaPTMedium, Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.25rem;
+  line-height: 1.3;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .aboutShop__title {
+    max-width: 500px;
+  }
+}
+@media (min-width: 375px) {
+  .aboutShop__title {
+    font-size: 25px;
+  }
+}
+@media (min-width: 414px) {
+  .aboutShop__title {
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .aboutShop__title {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .aboutShop__title {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .aboutShop__title {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1440px) {
+  .aboutShop__title {
+    font-size: 40px;
+    letter-spacing: 0.3rem;
+    margin: 0 auto;
+    max-width: 610px;
+  }
+}
+@media (min-width: 1600px) {
+  .aboutShop__title {
+    font-size: 45px;
+  }
+}
+
+.aboutShop__label-text {
+  margin-right: 13px;
+}

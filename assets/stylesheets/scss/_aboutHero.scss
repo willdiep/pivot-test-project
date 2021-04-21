@@ -1,0 +1,160 @@
+.aboutHero__pictureText {
+  font-family: AdobeGaramondProItalic, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  margin-top: 15px;
+
+  @media (min-width: 1024px) {
+    left: calc(100% + 25px);
+    line-height: 1;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    white-space: nowrap;
+  }
+
+  @media (min-width: 1280px) {
+    left: calc(100% + 30px);
+  }
+}
+
+.aboutHero__circleIcon {
+  display: none;
+
+  &__circleIcon-image {
+    height: auto;
+    width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    bottom: 0;
+    display: block;
+    margin-right: -70px;
+    position: absolute;
+    right: 0;
+    width: 120px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-right: -85px;
+    width: 145px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-right: -100px;
+    width: 170px;
+  }
+}
+
+.aboutHero__description {
+  @media (min-width: 1024px) {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+
+.aboutHero__item {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  padding: 65px 35px;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 75px 0;
+  }
+}
+.aboutHero__item--top {
+  background: var(--light-gray-red);
+  position: relative;
+}
+.aboutHero__item--bottom {
+  @media (max-width: 767px) {
+    border-top: 1px solid var(--night-gray);
+  }
+
+  @media (min-width: 768px) {
+    background-color: var(--desert-storm);
+    position: relative;
+
+    &--bottom:after {
+      border-left: 1px solid var(--night-gray);
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
+}
+.aboutHero__flex {
+  @media (min-width: 768px) {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+}
+.aboutHero__message {
+  margin-top: 20px;
+}
+.aboutHero__message a {
+  color: var(--night-gray);
+  text-decoration: underline;
+}
+.aboutHero__picture,
+.aboutHero__picture * {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.aboutHero__image {
+  position: relative;
+}
+.aboutHero__image {
+  @media (min-width: 1024px) {
+    margin: 0 auto;
+    width: 62%;
+  }
+
+  @media (min-width: 1280px) {
+    width: 56%;
+  }
+}
+.aboutHero__image--icon {
+  @media (min-width: 1024px) {
+    padding-bottom: 35px;
+  }
+  @media (min-width: 1280px) {
+    padding-bottom: 41px;
+  }
+  @media (min-width: 1440px) {
+    padding-bottom: 48px;
+  }
+}
+.aboutHero__title {
+  font-size: 30px;
+
+  @media (min-width: 375px) {
+    font-size: 35px;
+  }
+
+  @media (min-width: 414px) {
+    font-size: 40px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 45px;
+  }
+  
+  @media (min-width: 1440px) {
+    font-size: 50px;
+  }
+}

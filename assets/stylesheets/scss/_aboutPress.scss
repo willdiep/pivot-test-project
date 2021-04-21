@@ -1,0 +1,144 @@
+.aboutPress {
+  border-top: 1px solid var(--night-gray);
+  padding-top: 60px;
+}
+@media (min-width: 1024px) {
+  .aboutPress {
+    padding-top: 90px;
+  }
+}
+@media (min-width: 1280px) {
+  .aboutPress {
+    padding-top: 120px;
+  }
+}
+.aboutPress__eyebrow {
+  display: block;
+  font-family: FuturaPTMedium, Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.aboutPress__footer {
+  border-top: 1px solid var(--night-gray);
+  padding: 60px 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .aboutPress__footer {
+    display: none;
+  }
+}
+.aboutPress__header {
+  margin-bottom: 30px;
+}
+.aboutPress__header .aboutPress__container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.aboutPress__shop {
+  -webkit-align-items: center;
+  align-items: center;
+  color: var(--night-gray);
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  font-family: AdobeGaramondProItalic, 'Times New Roman', Times, serif;
+  font-size: 29px;
+  text-decoration: underline;
+}
+
+.aboutPress__shopText {
+  margin-right: 25px;
+}
+@media (min-width: 1024px) {
+  .aboutPress__shop {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .aboutPress__shopMobileOnly {
+    display: none;
+  }
+}
+.aboutPress__shop svg {
+  margin-left: 10px;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.aboutPress__shop svg > g {
+  fill: var(--night-gray);
+}
+.aboutPress__container {
+  padding: 0 35px;
+}
+@media (min-width: 1024px) {
+  .aboutPress__container {
+    padding: 0 60px;
+  }
+}
+.aboutPress-carousel {
+  border-top: 1px solid var(--night-gray);
+  margin: 0 -1px;
+}
+.aboutPress-carousel__image {
+  height: 100%;
+  left: 0;
+  // -o-object-fit: cover;
+  object-fit: contain;
+  // object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.aboutPress-carousel__image-holder {
+  padding-top: 100%;
+  position: relative;
+}
+.aboutPress-carousel__link {
+  display: block;
+  padding: 16%;
+}
+@media (min-width: 576px) {
+  .aboutPress-carousel__link {
+    padding: 14%;
+  }
+}
+@media (min-width: 768px) {
+  .aboutPress-carousel__link {
+    padding: 5% 15%;
+  }
+}
+@media (min-width: 1024px) {
+  .aboutPress-carousel__link {
+    padding: 7.5% 18%;
+  }
+}
+@media (min-width: 1280px) {
+  .aboutPress-carousel__link {
+    padding: 10% 21%;
+  }
+}
+.aboutPress .swiper-slide {
+  border-left: 1px solid var(--night-gray);
+  width: 80%;
+}
+@media (min-width: 576px) {
+  .aboutPress .swiper-slide {
+    width: 44.5%;
+  }
+}
+@media (min-width: 768px) {
+  .aboutPress .swiper-slide {
+    width: 25%;
+  }
+}
